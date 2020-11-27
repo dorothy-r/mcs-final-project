@@ -1,6 +1,17 @@
 /* 
 ==================================================
-Grid
+Color Palette
+==================================================
+ */
+#0D1821 black
+#344966 blue grey
+#BB7E8C pink
+#F0F4EF almost white
+#FFD447 yellow
+
+/* 
+==================================================
+Custom styles
 ==================================================
  */
 
@@ -10,12 +21,87 @@ Grid
     box-sizing: border-box;
  }
 
- .container {
-     width: 960 px;
-     padding-left: 30px;
-     padding-right: 30px;
-     margin: 0 auto;
+ html{
+     font-size: 62.5%;
  }
+
+ body {
+     background: #F0F4EF;
+     margin: 0;
+     padding: 0;
+     color: #0D1821;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 1.6rem;
+     line-height: 1.5;
+ }
+
+ 
+
+/* 
+==================================================
+Layout
+==================================================
+ */
+ 
+ .container {
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap; 
+}
+
+header {
+    text-align: left;
+    width: 100%;
+    background: #BB7E8C;
+    color: #F0F4EF;
+}
+
+.headline {
+    width: 90%;
+    padding: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.hero {
+    background: linear-gradient(15deg, #ccffff, #ffcccc);
+    display: flex;
+    justify-content: center;
+}
+
+.hero img {
+    height: 300px;
+    border-top-left-radius: 40px 50%;
+    border-bottom-left-radius: 40px 50%;
+    float: right;
+}
+
+.hero h2 {
+    color: #456187;
+}
+
+.one-third {
+    width: 31.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    float: left;
+    border-right: 1px solid black;
+  }
+
+  .one-third h3 {
+      color: #456187;
+      text-align: center;
+  }
+
+  .one-third:last-of-type {
+      border: none;
+  }
+ 
 
  /* 
 ==================================================
@@ -23,33 +109,86 @@ Typography
 ==================================================
  */
 
- h1, h3, h4, h5, p {
-     margin-bottom: 22px;
+ h1, h3, h4 {
+     margin-bottom: 1.6rem;
  }
+ 
+ h1 {
+     font-style: italic;
+     font-size: 3.6rem;
+     line-height: 44px;
+ }
+ h2 {
+     font-size: 2.4rem;
+     line-height: 44px;
+ }
+h3 {
+    font-size: 2.1rem;
+}
+h4 { 
+    font-size: 1.8rem;
+}
+p{
+    font-size: 1.6rem;
+}
 
- /* 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+/* 
 ==================================================
-Buttons
+Nav
 ==================================================
  */
 
- .btn {
-     border-radius: 5px;
+ nav{
+     float: right;
+     margin-right: 1rem;
+ }
+ nav ul, footer ul {
+     list-style-type: none;
+ }
+
+ nav li, footer li{
      display: inline-block;
-     margin: 0;
- }
-
- .btn-alt {
-     border: 1px solid #dfe2e5;
-     padding: 10px 30px;
+     font-size: 1.4rem;
+     padding: 1rem;
  }
 
  /* 
 ==================================================
-HomePage
+Footer
 ==================================================
  */
 
- .hero {
-     padding: 22px 80px 66px 80px;
- }
+ footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 1rem auto;
+    width: 100%;   
+}
+
+footer ul {
+    width: 100%;
+    margin-right: 10rem;
+}
+
+ .fa {
+    padding: 1rem;
+    font-size: 2rem;
+    width: 3rem;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .fa:hover {
+    opacity: 0.7;
+  }
