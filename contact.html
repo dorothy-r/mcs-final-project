@@ -8,18 +8,22 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="script.js"></script>
         <title>Dorothy Rhodes | Music Therapy</title>
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="topnav" id="topnavMenu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>  
                     <li><a href="services.html">Services</a></li>
                     <li><a href="faqs.html">FAQs</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav>
             <section class="headline">
@@ -30,47 +34,48 @@
            </section>
         </header>
 
-            <form onsubmit="return false" class="contact-form">
-                <h2>Let's Connect!</h2>
-                <div class="form-wrapper">
-                    <ul>
-                        <li>
-                            <div class="grid grid-2">
-                                <input type="text" placeholder="Name" id="name">
-                                <input type="email" placeholder="email" id="email">
-                            </div>
-                        </li>
-                        <li>
-                            <select id="service">
-                                <option disabled selected value>I am interested in...</option>
-                                <option>Individual Music Therapy - Prenatal</option>
-                                <option>Individual Music Therapy - Postpartum</option>
-                                <option>Birth Music Consultation</option>
-                                <option>Childbirth Education Class</option>
-                                <option>Postpartum Music & Bonding Group</option>
-                                <option>Other</option>
-                        </select>
-                    </li>
-                    <li>
-                        <textarea id="message" placeholder="Please write your message here"></textarea>
-                    </li>
+        <form onsubmit="return false" class="contact-form">
+            <h2>Let's Connect!</h2>
+            <div class="form-wrapper">
+                <ul>
                     <li>
                         <div class="grid grid-2">
-                            <button class="btn" onclick="sendContact()">
-                                <span>Submit</span>
-                            </button>
+                            <input type="text" placeholder="Name" id="name">
+                            <input type="email" placeholder="email" id="email">
                         </div>
                     </li>
-                </ul>
-                </div>
-            </form>
+                    <li>
+                        <select id="service">
+                            <option disabled selected value>I am interested in...</option>
+                            <option>Individual Music Therapy - Prenatal</option>
+                            <option>Individual Music Therapy - Postpartum</option>
+                            <option>Birth Music Consultation</option>
+                            <option>Childbirth Education Class</option>
+                            <option>Postpartum Music & Bonding Group</option>
+                            <option>Other</option>
+                    </select>
+                </li>
+                <li>
+                    <textarea id="message" placeholder="Please write your message here"></textarea>
+                </li>
+                <li>
+                    <div class="grid grid-2">
+                        <button class="btn" onclick="sendContact()">
+                            <span>Submit</span>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+            </div>
+        </form>
 
-            <footer>
-                <ul>
-                    <li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-twitter"></a></li>
-                    <li><a href="#" class="fa fa-instagram"></a></li> 
-                </ul>
-            </footer>
+        <footer>
+            <ul>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li> 
+            </ul>
+        </footer>
+        <script src="script.js"></script>
     </body>
 </html>

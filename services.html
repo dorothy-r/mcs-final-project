@@ -12,15 +12,20 @@
     </head>
     <body>
             <header>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>  
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="faqs.html">FAQs</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+              <nav class="topnav" id="topnavMenu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>  
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
                 <section class="headline">
                     <h1>
                         <a href="index.html">Dorothy Rhodes | MA, MT-BC</a>
@@ -30,54 +35,65 @@
             </header>
 
             <main>
-                <div class="content-wrap item-details divider">
+                <section>
                     <h2>Services</h2>
         
-                    <!-- Type 1 -->
-                    <section class="service-item">
-                      <div class="service-details">
-                        <h3>Prenatal Music Therapy</h3>
-                      </div>
-                      <div class="service-summary">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus euismod tempor. Sed dapibus massa quis sem luctus, quis varius est ullamcorper. Donec massa nunc, euismod a tellus nec, blandit aliquam sapien. Morbi ut vulputate arcu. Sed interdum risus at augue ullamcorper scelerisque. Fusce suscipit rutrum fermentum. Nunc nec massa vel odio consequat interdum. Proin lacinia a nisl ut feugiat</p>
-                      </div>
-                    </section>
+                    <h4>For Individuals and Families</h4>
+                    <!-- Prenatal -->
+                    <button class="accordion">Prenatal Music Therapy</button>
+                    <div class="service-details">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus euismod tempor. Sed dapibus massa quis sem luctus, quis varius est ullamcorper. Donec massa nunc, euismod a tellus nec, blandit aliquam sapien. Morbi ut vulputate arcu. Sed interdum risus at augue ullamcorper scelerisque. Fusce suscipit rutrum fermentum. Nunc nec massa vel odio consequat interdum. Proin lacinia a nisl ut feugiat</p>
+                    </div>
+                    
           
-                    <!-- Job 2 -->
-                    <section class="service-item">
-                      <div class="service-details">
-                        <h3>Birth Music Consultation</h3>
-                      </div>
-                      <div class="service-summary">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        <ul>
-                          <li>OLorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            <ul>
-                              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. .</li>
-                              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                              <li>CLorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                            </ul>
-                          </li>
-                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                          <li>VLorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
-                        </ul>
-                      </div>
-                    </main>
+                    <!-- BMC -->
+                    <button class="accordion">Birth Music Consultation</button>
+                    <div class="service-details">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                      <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                        <li>VLorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                      </ul>
+                    </div>
+
+                    <!-- MTACB -->
+                    <button class="accordion">Music Therapy Assisted Childbirth</button>
+                    <div class="service-details">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                      <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                        <li>VLorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                      </ul>
+                    </div>
           
-                    <!-- Job 3 -->
-                    <section class="service-item">
-                      <div class="service-details">
-                        <h3>Postpartum Music Therapy</h3>
-                      </div>
-                      <div class="service-summary">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus euismod tempor. Sed dapibus massa quis sem luctus, quis varius est ullamcorper. Donec massa nunc, euismod a tellus nec, blandit aliquam sapien. Morbi ut vulputate arcu. Sed interdum risus at augue ullamcorper scelerisque. Fusce suscipit rutrum fermentum. Nunc nec massa vel odio consequat interdum. Proin lacinia a nisl ut feugiat</p>
-                      </div>
-                    </section>
-                  </div>
-            </section>
+                    <!-- Postpartum -->
+                    <button class="accordion">Postpartum Music Therapy</button>
+                    <div class="service-details">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus euismod tempor. Sed dapibus massa quis sem luctus, quis varius est ullamcorper. Donec massa nunc, euismod a tellus nec, blandit aliquam sapien. Morbi ut vulputate arcu. Sed interdum risus at augue ullamcorper scelerisque. Fusce suscipit rutrum fermentum. Nunc nec massa vel odio consequat interdum. Proin lacinia a nisl ut feugiat</p>
+                    </div>
+
+                    <h4>Groups</h4>
+
+                     <!-- Education -->
+                     <button class="accordion">Childbirth Education</button>
+                     <div class="service-details">
+                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus euismod tempor. Sed dapibus massa quis sem luctus, quis varius est ullamcorper. Donec massa nunc, euismod a tellus nec, blandit aliquam sapien. Morbi ut vulputate arcu. Sed interdum risus at augue ullamcorper scelerisque. Fusce suscipit rutrum fermentum. Nunc nec massa vel odio consequat interdum. Proin lacinia a nisl ut feugiat</p>
+                     </div>
+
+                     <!-- PP Group -->
+                    <button class="accordion">Parent-Baby Support Group</button>
+                    <div class="service-details">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam finibus euismod tempor. Sed dapibus massa quis sem luctus, quis varius est ullamcorper. Donec massa nunc, euismod a tellus nec, blandit aliquam sapien. Morbi ut vulputate arcu. Sed interdum risus at augue ullamcorper scelerisque. Fusce suscipit rutrum fermentum. Nunc nec massa vel odio consequat interdum. Proin lacinia a nisl ut feugiat</p>
+                    </div>
+                    
+                     
+
+                  
+            </main>
 
             <footer>
                 <ul>
@@ -86,5 +102,6 @@
                     <li><a href="#" class="fa fa-instagram"></a></li> 
                 </ul>
             </footer>
+        <script src="script.js"></script>
     </body>
 </html>

@@ -12,14 +12,20 @@
     </head>
     <body>
             <header>
-                <nav>
+                <nav class="topnav" id="topnavMenu">
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About</a></li>  
                         <li><a href="services.html">Services</a></li>
                         <li><a href="faqs.html">FAQs</a></li>
                         <li><a href="contact.html">Contact</a></li>
+                        <li>
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                            </a>
+                        </li>
                     </ul>
+                    
                 </nav>
                 <section class="headline">
                     <h1>
@@ -39,7 +45,7 @@
                     <img src="img/babyhand.jpg" alt="baby's hand holding parent's finger"/>
                 </section>
     
-                <section>
+                <section class="flex-container">
                         <!-- About -->
                         <section class="one-third">
                             <a href="about.html">
@@ -57,7 +63,7 @@
                         <!--FAQS-->
                         <section class="one-third">
                             <a href="faqs.html">
-                                <h3>Music Therapy FAQs</h3>
+                                <h3>FAQs</h3>
                                 <p>Learn more about music therapy and how it can support you</p>
                             </a>
                         </section>
@@ -71,6 +77,7 @@
                     <li><a href="#" class="fa fa-instagram"></a></li> 
                 </ul>
             </footer>
-        </div>     
+        </div> 
+        <script src="script.js"></script>    
     </body>
 </html>
