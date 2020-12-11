@@ -1,3 +1,5 @@
+//Hamburger Menu
+
 function expandMenu() {
     let x = document.getElementById("topnavMenu");
     if (x.className === "topnav") {
@@ -7,6 +9,7 @@ function expandMenu() {
     }
 }
 
+//Accordion
 let acc = document.getElementsByClassName("accordion");
 let i;
 
@@ -22,6 +25,8 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
+
+//Contact Form
 let fields = {};
 
 document.addEventListener("DOMContentLoaded", function() {
