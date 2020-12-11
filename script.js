@@ -1,4 +1,4 @@
-function myFunction() {
+function expandMenu() {
     let x = document.getElementById("topnavMenu");
     if (x.className === "topnav") {
         x.className += "responsive";
