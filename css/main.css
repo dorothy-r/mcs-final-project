@@ -11,19 +11,22 @@ Color Palette
 
 /* 
 ==================================================
-Custom styles
+Custom Styles
 ==================================================
- */
+ */ 
 
- *,
- *:before,
- *:after {
-    box-sizing: border-box;
+*{
+    margin: 0;
+}
+
+*, *:before, *:after {
+     box-sizing: border-box;
  }
 
- html{
-     font-size: 62.5%;
- }
+ html {
+    font-size: 62.5%;
+}     
+
 
  body {
      background: #F0F4EF;
@@ -63,7 +66,6 @@ header {
     width: 90%;
     padding: 3rem;
     font-family: 'Playfair Display', serif;
-    font-style: italic;
 }
 
 .hero {
@@ -84,16 +86,18 @@ header {
 }
 
 .grid-container {
-    flex-flow: row nowrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 0.5rem;
+
 }
 
 .one-third {
-    width: 31.5%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    float: left;
     border-right: 1px solid black;
   }
 
@@ -106,6 +110,9 @@ header {
       border: none;
   }
  
+  .content-wrap {
+      padding: 3rem;
+  }
 
  /* 
 ==================================================
@@ -206,36 +213,56 @@ footer ul {
 
   /* 
 ==================================================
+About
+==================================================
+ */
+
+.about{
+    float: left;
+    width: 70%;
+    padding: 2rem;
+}
+
+.about-img {
+    width: 30%;
+    height: 400px;
+    object-fit: cover;
+    object-position: 50% 10%;
+    padding: 2rem 0;
+}
+
+  /* 
+==================================================
 Services
 ==================================================
  */
 
 .accordion {
-    background-color: ; 
-    color: ;
+    background-color: #456187; 
+    color: #F0F4EF;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     text-align: left;
-    border: none;
+    border: 1px solid black;
     outline: none;
     transition: 0.4s;
 }
 
 .active, .accordion:hover {
-    background-color: ;
+    opacity: 0.7 ;
 }
 
 .service-details {
     padding: 0 18px;
-    background-color: ;
+    background-color: #F0F4EF ;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
 }
 
 .accordion:after {
-    content: '\2304';
+    content: "\2304";
     font-size: 13px;
     color: #777;
     float: right;
@@ -321,10 +348,32 @@ Responsive
     }
 
     .hero img {
-        display: none;
-        
+        display: none;   
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .one-third {
+        border-right: none;
+        border-bottom: 1px solid black;
+      }  
+      
+    .about{
+        width: 95%;
+        padding: 2rem;
+    }
+
+    .about-img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
     }
 }
+
+
 
  @media screen and (min-width: 600px) {
      .contact-form .grid{
@@ -334,5 +383,11 @@ Responsive
 
      .contact-form .grid-2 {
          grid-template-columns: 1fr 1fr;
+     }
+
+     .q-a{
+         display: grid;
+         grid-template-columns: 1fr 2fr;
+         column-gap: 20px;
      }
  }
